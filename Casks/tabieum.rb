@@ -1,6 +1,6 @@
 cask "tabieum" do
-  version "0.1.0"
-  sha256 "e4facc5524cae8adb6352c6c46216b6d53de3124d92499474e5b3da6238638c6"
+  version "0.1.1"
+  sha256 "bdc83406dcfbbcefd719186cbc395a9643bfd88789e202ec5690eb4ce0792bfd"
 
   url "https://github.com/juhyeonni/tabieum/releases/download/v#{version}/tabieum-#{version}.zip"
   name "tabieum"
@@ -12,7 +12,6 @@ cask "tabieum" do
     strategy :github_latest
   end
 
-  depends_on arch: :arm64
   depends_on macos: :sequoia
 
   app "tabieum.app"
