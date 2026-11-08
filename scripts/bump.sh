@@ -8,7 +8,7 @@ version=${1:?usage: scripts/bump.sh <version> [zip]}
 zip=${2:-}
 if [ -z "$zip" ]; then
   zip=$(mktemp -d)/tabieum.zip
-  curl -fL "https://github.com/$repo/releases/download/v$version/tabieum-$version.zip" -o "$zip"
+  curl -fL "https://github.com/$repo/releases/download/v$version/Tabieum-$version.zip" -o "$zip"
 fi
 sha=$(shasum -a 256 "$zip" | cut -d' ' -f1)
 sed -i '' -e "s/^  version \".*\"/  version \"$version\"/" -e "s/^  sha256 \".*\"/  sha256 \"$sha\"/" Casks/tabieum.rb
