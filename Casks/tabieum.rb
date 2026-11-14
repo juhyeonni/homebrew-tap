@@ -1,6 +1,6 @@
 cask "tabieum" do
-  version "0.4.1"
-  sha256 "dd79cf7e3650a975f45f68cb619c16b24cc5eda7c2bba6c5fa418adbabc9559a"
+  version "0.4.2"
+  sha256 "b3d5e6723dcb45679199ef786fbd238fd78ec8f56417bad135e748de57bc31dd"
 
   url "https://github.com/juhyeonni/tabieum/releases/download/v#{version}/Tabieum-#{version}.zip"
   name "tabieum"
